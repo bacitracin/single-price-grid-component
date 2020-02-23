@@ -1,0 +1,29 @@
+body {
+  background-color: cyan;
+  display: flex;
+  flex-direction: column;
+  font-family: Karla;
+  font-size: 16px;
+  justify-content: center;
+  width: 100%; }
+  body .content-block, body .content-block--header, body .content-block--subscription, body .content-block--company-info {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: flex-start;
+    padding: 20px; }
+    body .content-block--header {
+      background-color: white; }
+      body .content-block--header h2 {
+        color: #2ab2af; }
+      body .content-block--header .accent {
+        color: #c0df34; }
+      body .content-block--header .description {
+        color: #98a6bd;
+        padding: 10px 0px; }
+    body .content-block--subscription {
+      color: white; }
+    body .content-block--company-info {
+      color: white; }
+
+/*# sourceMappingURL=index.css.map */
