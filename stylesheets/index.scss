@@ -11,12 +11,13 @@ $light-gray: hsl(204, 43%, 93%);
 $grayish-blue: hsl(218, 22%, 67%);
 
 body {
-  background-color: cyan;
+  background-color: white;
   display: flex;
   flex-direction: column;
   font-family: Karla;
   font-size: 16px;
   justify-content: center;
+  margin: 0;
   width: 100%;
 
   .content-block {
@@ -24,7 +25,7 @@ body {
     flex-direction: column;
     align-content: space-between;
     justify-content: flex-start;
-    padding: 20px;
+    padding: 20px 30px;
 
     &--header {
       @extend .content-block;
@@ -34,19 +35,51 @@ body {
       }
       .accent {
         color: $yellow;
+        margin: 0px;
       }
       .description {
         color: $grayish-blue;
-        padding: 10px 0px;
+        margin: 20px 0px;
       }
     }
     &--subscription {
       @extend .content-block;
+      background-color: $cyan;
       color: white;
+
+      .price-line {
+        display: flex;
+        align-items: center;
+        margin: 10px 0px;
+        .price {
+          font-size: 40px;
+          font-weight: bold;
+        }
+
+        .time-period {
+          margin-left: 10px;
+        }
+
+      }
+
+      button {
+        background-color: $yellow;
+        border-radius: 4px;
+        color: white;
+        font-size: 16px;
+        margin: 20px 0px;
+        padding: 10px;
+      }
     }
     &--company-info {
       @extend .content-block;
+      background-color: $cyan;
       color: white;
+      opacity: 0.8;
+
+      text {
+        margin: 5px 0px;
+      }
     }
   }
 }

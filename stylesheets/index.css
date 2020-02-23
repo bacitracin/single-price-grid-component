@@ -1,29 +1,52 @@
 body {
-  background-color: cyan;
+  background-color: white;
   display: flex;
   flex-direction: column;
   font-family: Karla;
   font-size: 16px;
   justify-content: center;
+  margin: 0;
   width: 100%; }
   body .content-block, body .content-block--header, body .content-block--subscription, body .content-block--company-info {
     display: flex;
     flex-direction: column;
     align-content: space-between;
     justify-content: flex-start;
-    padding: 20px; }
+    padding: 20px 30px; }
     body .content-block--header {
       background-color: white; }
       body .content-block--header h2 {
         color: #2ab2af; }
       body .content-block--header .accent {
-        color: #c0df34; }
+        color: #c0df34;
+        margin: 0px; }
       body .content-block--header .description {
         color: #98a6bd;
-        padding: 10px 0px; }
+        margin: 20px 0px; }
     body .content-block--subscription {
+      background-color: #2ab2af;
       color: white; }
+      body .content-block--subscription .price-line {
+        display: flex;
+        align-items: center;
+        margin: 10px 0px; }
+        body .content-block--subscription .price-line .price {
+          font-size: 40px;
+          font-weight: bold; }
+        body .content-block--subscription .price-line .time-period {
+          margin-left: 10px; }
+      body .content-block--subscription button {
+        background-color: #c0df34;
+        border-radius: 4px;
+        color: white;
+        font-size: 16px;
+        margin: 20px 0px;
+        padding: 10px; }
     body .content-block--company-info {
-      color: white; }
+      background-color: #2ab2af;
+      color: white;
+      opacity: 0.8; }
+      body .content-block--company-info text {
+        margin: 5px 0px; }
 
 /*# sourceMappingURL=index.css.map */
