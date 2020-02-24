@@ -1,6 +1,5 @@
 // Design breakpoints
-$breakpoint-mobile: 375px;
-$breakpoint-desktop: 1440px;
+$breakpoint-desktop: 600px;
 
 // Primary
 $cyan: hsl(179, 62%, 43%);
@@ -20,6 +19,16 @@ body {
   margin: 0;
   width: 100%;
 
+  .container {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $breakpoint-desktop) {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+    }
+  }
   .content-block {
     display: flex;
     flex-direction: column;
@@ -27,10 +36,14 @@ body {
     justify-content: flex-start;
     padding: 20px 30px;
 
+    @media (min-width: $breakpoint-desktop) {
+      padding: 50px;
+    }
+
     &--header {
       @extend .content-block;
       background-color: white;
-      h2 {
+      h1 {
         color: $cyan;
       }
       .accent {
@@ -39,20 +52,26 @@ body {
       }
       .description {
         color: $grayish-blue;
+        line-height: 25px;
         margin: 20px 0px;
       }
+
     }
     &--subscription {
       @extend .content-block;
       background-color: $cyan;
       color: white;
 
+      @media (min-width: $breakpoint-desktop) {
+        width: 50%;
+      }
+
       .price-line {
         display: flex;
         align-items: center;
         margin: 10px 0px;
         .price {
-          font-size: 40px;
+          font-size: 36px;
           font-weight: bold;
         }
 
@@ -67,8 +86,8 @@ body {
         border-radius: 4px;
         color: white;
         font-size: 16px;
-        margin: 20px 0px;
-        padding: 10px;
+        margin: 20px 0px 0px;
+        padding: 20px;
       }
     }
     &--company-info {
@@ -79,6 +98,10 @@ body {
 
       text {
         margin: 5px 0px;
+      }
+
+      @media (min-width: $breakpoint-desktop) {
+        width: 50%;
       }
     }
   }

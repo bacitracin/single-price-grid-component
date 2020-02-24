@@ -7,31 +7,46 @@ body {
   justify-content: center;
   margin: 0;
   width: 100%; }
+  body .container {
+    display: flex;
+    flex-direction: column; }
+    @media (min-width: 600px) {
+      body .container {
+        display: flex;
+        flex-direction: row;
+        width: 100%; } }
   body .content-block, body .content-block--header, body .content-block--subscription, body .content-block--company-info {
     display: flex;
     flex-direction: column;
     align-content: space-between;
     justify-content: flex-start;
     padding: 20px 30px; }
+    @media (min-width: 600px) {
+      body .content-block, body .content-block--header, body .content-block--subscription, body .content-block--company-info {
+        padding: 50px; } }
     body .content-block--header {
       background-color: white; }
-      body .content-block--header h2 {
+      body .content-block--header h1 {
         color: #2ab2af; }
       body .content-block--header .accent {
         color: #c0df34;
         margin: 0px; }
       body .content-block--header .description {
         color: #98a6bd;
+        line-height: 25px;
         margin: 20px 0px; }
     body .content-block--subscription {
       background-color: #2ab2af;
       color: white; }
+      @media (min-width: 600px) {
+        body .content-block--subscription {
+          width: 50%; } }
       body .content-block--subscription .price-line {
         display: flex;
         align-items: center;
         margin: 10px 0px; }
         body .content-block--subscription .price-line .price {
-          font-size: 40px;
+          font-size: 36px;
           font-weight: bold; }
         body .content-block--subscription .price-line .time-period {
           margin-left: 10px; }
@@ -40,13 +55,16 @@ body {
         border-radius: 4px;
         color: white;
         font-size: 16px;
-        margin: 20px 0px;
-        padding: 10px; }
+        margin: 20px 0px 0px;
+        padding: 20px; }
     body .content-block--company-info {
       background-color: #2ab2af;
       color: white;
       opacity: 0.8; }
       body .content-block--company-info text {
         margin: 5px 0px; }
+      @media (min-width: 600px) {
+        body .content-block--company-info {
+          width: 50%; } }
 
 /*# sourceMappingURL=index.css.map */
