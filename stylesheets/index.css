@@ -14,6 +14,7 @@ body {
       body .container {
         display: flex;
         flex-direction: row;
+        font-size: 28px;
         width: 100%; } }
   body .content-block, body .content-block--header, body .content-block--subscription, body .content-block--company-info {
     display: flex;
@@ -28,18 +29,30 @@ body {
       background-color: white; }
       body .content-block--header h1 {
         color: #2ab2af; }
+        @media (min-width: 600px) {
+          body .content-block--header h1 {
+            font-size: 50px; } }
       body .content-block--header .accent {
         color: #c0df34;
         margin: 0px; }
+        @media (min-width: 600px) {
+          body .content-block--header .accent {
+            font-size: 36px; } }
       body .content-block--header .description {
         color: #98a6bd;
         line-height: 25px;
         margin: 20px 0px; }
+        @media (min-width: 600px) {
+          body .content-block--header .description {
+            font-size: 28px;
+            line-height: 40px; } }
     body .content-block--subscription {
       background-color: #2ab2af;
       color: white; }
       @media (min-width: 600px) {
         body .content-block--subscription {
+          display: flex;
+          justify-content: space-between;
           width: 50%; } }
       body .content-block--subscription .price-line {
         display: flex;
@@ -48,6 +61,9 @@ body {
         body .content-block--subscription .price-line .price {
           font-size: 36px;
           font-weight: bold; }
+          @media (min-width: 600px) {
+            body .content-block--subscription .price-line .price {
+              font-size: 60px; } }
         body .content-block--subscription .price-line .time-period {
           margin-left: 10px; }
       body .content-block--subscription button {
@@ -57,6 +73,10 @@ body {
         font-size: 16px;
         margin: 20px 0px 0px;
         padding: 20px; }
+        @media (min-width: 600px) {
+          body .content-block--subscription button {
+            font-size: 26px;
+            margin: 30px 0px 0px; } }
     body .content-block--company-info {
       background-color: #2ab2af;
       color: white;

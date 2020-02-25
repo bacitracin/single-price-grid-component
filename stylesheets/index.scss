@@ -26,6 +26,7 @@ body {
     @media (min-width: $breakpoint-desktop) {
       display: flex;
       flex-direction: row;
+      font-size: 28px;
       width: 100%;
     }
   }
@@ -45,15 +46,25 @@ body {
       background-color: white;
       h1 {
         color: $cyan;
+        @media (min-width: $breakpoint-desktop) {
+          font-size: 50px;
+        }
       }
       .accent {
         color: $yellow;
         margin: 0px;
+        @media (min-width: $breakpoint-desktop) {
+          font-size: 36px;
+        }
       }
       .description {
         color: $grayish-blue;
         line-height: 25px;
         margin: 20px 0px;
+        @media (min-width: $breakpoint-desktop) {
+          font-size: 28px;
+          line-height: 40px;
+        }
       }
 
     }
@@ -63,6 +74,8 @@ body {
       color: white;
 
       @media (min-width: $breakpoint-desktop) {
+        display: flex;
+        justify-content: space-between;
         width: 50%;
       }
 
@@ -73,12 +86,13 @@ body {
         .price {
           font-size: 36px;
           font-weight: bold;
+          @media (min-width: $breakpoint-desktop) {
+            font-size: 65px;
+          }
         }
-
         .time-period {
           margin-left: 10px;
         }
-
       }
 
       button {
@@ -88,6 +102,11 @@ body {
         font-size: 16px;
         margin: 20px 0px 0px;
         padding: 20px;
+
+        @media (min-width: $breakpoint-desktop) {
+          font-size: 26px;
+          margin: 30px 0px 0px;
+        }
       }
     }
     &--company-info {
